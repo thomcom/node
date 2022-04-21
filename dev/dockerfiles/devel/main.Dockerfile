@@ -71,7 +71,7 @@ RUN --mount=type=cache,target=/var/lib/apt \
  \
  && apt update \
  && apt install --no-install-recommends -y \
-    git ssh vim ninja-build \
+    git ninja-build \
     gcc-${GCC_VERSION} g++-${GCC_VERSION} gdb \
     # CMake dependencies
     curl libssl-dev libcurl4-openssl-dev xz-utils zlib1g-dev liblz4-dev \
@@ -317,7 +317,7 @@ RUN --mount=type=cache,target=/var/lib/apt \
  \
  && apt update \
  && apt install --no-install-recommends -y \
-    jq entr nano sudo bash-completion \
+    jq entr ssh vim nano sudo bash-completion \
     # X11 dependencies
     libxi-dev libxrandr-dev libxinerama-dev libxcursor-dev \
     # node-canvas dependencies
