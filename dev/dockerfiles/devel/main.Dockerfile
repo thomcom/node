@@ -71,7 +71,7 @@ RUN --mount=type=cache,target=/var/lib/apt \
  \
  && apt update \
  && apt install --no-install-recommends -y \
-    git ninja-build \
+    git ssh vim ninja-build \
     gcc-${GCC_VERSION} g++-${GCC_VERSION} gdb \
     # CMake dependencies
     curl libssl-dev libcurl4-openssl-dev xz-utils zlib1g-dev liblz4-dev \
